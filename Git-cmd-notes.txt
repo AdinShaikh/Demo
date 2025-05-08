@@ -1,0 +1,27 @@
+In github, folder is referred to as repository(The main folder), and in the system(laptop, PC) folder is referred to as directory. So, in the context of github, a repository is a collection of files and folders
+
+GIT CLONE
+To clone a project from github, copy the https link of the project, open terminal, navigate to the desired directory(folder), and run the following command:
+git clone https://github.com/username/repository.git
+The repository will be cloned in the current directory.
+
+GIT STATUS
+Checking status is one the important task as it shows which files are modified or untracked(added).
+To check the status use the command:
+git status
+This command will show which files are modified, untracked, or deleted.
+
+GIT ADD
+Now we have updated the project in only our system. And to commit the changes, we need to add the changes to the staging area. To add the changes to the staging area, use the following command:
+git add .(the dot represents all the files in the current directory)
+or 
+git add filename.txt (to add a specific file)
+
+GIT COMMIT
+After adding we need to commit the changes. To commit the changes, use the following command:
+git commit -m "message" (the message is the description of the changes. description should be meaningful and understandable)
+After committing the changes will be saved in the local repository(i.e in your system only).
+
+GIT PUSH
+Finally we push the changes to the remote repository(github). To push the changes, use the following command:
+git push origin main (origin is the name of the remote repository, and main is the branch name)
