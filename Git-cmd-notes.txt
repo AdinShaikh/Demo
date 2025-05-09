@@ -23,5 +23,7 @@ git commit -m "message" (the message is the description of the changes. descript
 After committing the changes will be saved in the local repository(i.e in your system only).
 
 GIT PUSH
-Finally we push the changes to the remote repository(github). To push the changes, use the following command:
+Finally we push the changes from local repository content to the remote repository(github). To push the changes, use the following command:
 git push origin main (origin is the name of the remote repository, and main is the branch name)
+
+here git is the command, and push is the action, and origin is what is considered as the remote repository, and main is the branch
