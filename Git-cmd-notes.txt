@@ -33,6 +33,9 @@ Firstly, create a new repository on github. Then, navigate to the local reposito
 
 Here's how to do it
 
+First you have to make your repository a git repository and now we can make changes that can be pushed. To do this we have to use the command:
+git init
+
 Create a new repo in your local machine(in any desired folder. This folder has no association with github) with command: mkdir (which means make directory)
 mkdir LocalRepo
 Then , navigate to the local repository in terminal by using the command: cd (which means change directory)
