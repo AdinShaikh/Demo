@@ -25,5 +25,38 @@ After committing the changes will be saved in the local repository(i.e in your s
 GIT PUSH
 Finally we push the changes from local repository content to the remote repository(github). To push the changes, use the following command:
 git push origin main (origin is the name of the remote repository, and main is the branch name)
+here git is the command, and push is the action, and origin is what is considered as the remote repository, and main is the branch in which we are pushing our chnages
 
-here git is the command, and push is the action, and origin is what is considered as the remote repository, and main is the branch
+HOW TO UPLOAD A REPO ON GITHUB FROM LOCAL MACHINE
+
+Firstly, create a new repository on github. Then, navigate to the local repository on your system by cloning the repository from github. Then, add the changes to the staging area, commit the changes, and finally push the changes to the remote repository(github).
+
+Here's how to do it
+
+Create a new repo in your local machine(in any desired folder. This folder has no association with github) with command: mkdir (which means make directory)
+mkdir LocalRepo
+Then , navigate to the local repository in terminal by using the command: cd (which means change directory)
+cd LocalRepo
+add files, modify files, and delete files as per your requirement.
+then add, commit the files.
+
+Now these changes are in your local machine. To upload these changes to the remote repository(github), use the following
+commands:
+git remote add origin <-link of the repo you've created in github->
+here git remote add means add a remote repository, and origin is the name of the remote repository followed by its link
+
+git remote -v (to check the remote repository)
+
+There's one more command to check the branch in which the local repo is pushed. This is done by using the command: 
+git branch 
+It will show all the branches in which local repo can be pushed. If there's only one branch, it'll be named master. We can push our repo in it, but it 's recommended to push in a new branch. OR we can change the 'master' branch name to 'main'
+
+To create a new branch, use the following command:
+git branch -m newbranchname (newbranchname is the name of the new branch)
+Then, push the changes to the remote repository(github) by using the following command:
+git push -u origin newbranchname (origin is the name of the remote repository, and newbranchname is the branch in which we are pushing our changes)
+
+To change the name of the branch, use the following command:
+git branch -M main (main is the new name of the branch)
+
+Then, push the changes to the remote repository(github) by using the command: git push -u origin main.
